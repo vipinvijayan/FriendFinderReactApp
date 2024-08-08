@@ -98,7 +98,7 @@ class UserList extends Component {
             </button>
             {/* eslint-disable-next-line*/}
             <a className="navbar-brand page-scroll" href="#page-top">
-              Cliniqon User List
+              User List
             </a>
           </div>
 
@@ -127,7 +127,7 @@ class UserList extends Component {
                     this.GotoSearchPage();
                   }}
                 >
-                  Search Profile
+                  Find Friend
                 </button>
               </li>
               <li>
@@ -141,17 +141,7 @@ class UserList extends Component {
                   Profile Matches
                 </button>
               </li>
-              <li>
-                <button
-                  type="submit"
-                  className="page-scroll"
-                  onClick={() => {
-                    this.GotoFriendsList();
-                  }}
-                >
-                  Friends List
-                </button>
-              </li>
+           
               <li>
                 <button
                   type="submit"
@@ -175,7 +165,7 @@ class UserList extends Component {
           <div className="task-list">
             <div className="task high">
               <div className="desc">
-                <div className="title">{this.state.noDataMessage}</div>
+                <div className="title">No Data</div>
               </div>
             </div>
 

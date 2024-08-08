@@ -93,7 +93,7 @@ class FriendsList extends Component {
                       this.GotoSearchPage();
                     }}
                   >
-                    Search Profile
+                    Find Friend
                   </button>
                 </li>
                 <li>
@@ -107,17 +107,7 @@ class FriendsList extends Component {
                     Profile Matches
                   </button>
                 </li>
-                <li>
-                  <button
-                    type="submit"
-                    className="page-scroll"
-                    onClick={() => {
-                      this.GotoFriendsList();
-                    }}
-                  >
-                    Friends List
-                  </button>
-                </li>
+               
                 <li>
                   <button
                     type="submit"
@@ -140,7 +130,7 @@ class FriendsList extends Component {
                     <div className="task-list">
                       <div className="task high">
                         <div className="desc">
-                          <div className="title">{this.state.noDataMessage}</div>
+                          <div className="title">No Data</div>
                         </div>
                       </div>
           

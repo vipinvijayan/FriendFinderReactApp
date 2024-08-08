@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import { PuffLoader } from "react-spinners";
 import Configuration from "../shared/Configuration";
-import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 class ProfileMatch extends Component {
 
@@ -62,7 +61,7 @@ class ProfileMatch extends Component {
               </button>
               {/* eslint-disable-next-line*/}
               <a className="navbar-brand page-scroll" href="#page-top">
-                Cliniqon Profile Matches
+              Matched Profiles
               </a>
             </div>
   
@@ -91,7 +90,7 @@ class ProfileMatch extends Component {
                       this.GotoSearchPage();
                     }}
                   >
-                    Search Profile
+                    Find Friend
                   </button>
                 </li>
                 <li>
@@ -105,17 +104,7 @@ class ProfileMatch extends Component {
                     Profile Matches
                   </button>
                 </li>
-                <li>
-                  <button
-                    type="submit"
-                    className="page-scroll"
-                    onClick={() => {
-                      this.GotoFriendsList();
-                    }}
-                  >
-                    Friends List
-                  </button>
-                </li>
+               
                 <li>
                   <button
                     type="submit"
@@ -139,7 +128,7 @@ class ProfileMatch extends Component {
 
                     <div className="task high">
                         <div className="desc">
-                            <div className="title">{this.state.noDataMessage}</div>
+                            <div className="title">No Data</div>
 
                         </div>
 

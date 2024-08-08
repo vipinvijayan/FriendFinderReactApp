@@ -62,7 +62,7 @@ class BillGeneration extends Component {
             </button>
             {/* eslint-disable-next-line*/}
             <a className="navbar-brand page-scroll" href="#page-top">
-              Cliniqon User List
+              Find Friend
             </a>
           </div>
 
@@ -91,7 +91,7 @@ class BillGeneration extends Component {
                     this.GotoSearchPage();
                   }}
                 >
-                  Search Profile
+                  Find Friend
                 </button>
               </li>
               <li>
@@ -105,17 +105,7 @@ class BillGeneration extends Component {
                   Profile Matches
                 </button>
               </li>
-              <li>
-                <button
-                  type="submit"
-                  className="page-scroll"
-                  onClick={() => {
-                    this.GotoFriendsList();
-                  }}
-                >
-                  Friends List
-                </button>
-              </li>
+          
               <li>
                 <button
                   type="submit"
@@ -138,7 +128,7 @@ class BillGeneration extends Component {
           <div className="task-list">
             <div className="task high">
               <div className="desc">
-                <div className="title">{this.state.noDataMessage}</div>
+                <div className="title">No Data</div>
               </div>
             </div>
 
@@ -337,7 +327,7 @@ class BillGeneration extends Component {
     const target = event.target;
     const value = target.checked;
  //   this.state.dateChecked= value;
-    this.setState({ dateChecked: true });
+    this.setState({ dateChecked: value });
   }
 
   getItems() {
