@@ -268,7 +268,7 @@ class BillGeneration extends Component {
         <div className="items">{listItems}</div>
         <PuffLoader
           color="#000"
-          loading={this.state.loading}
+          loading={this.state.isLoading}
           css={override}
           size={80}
         />
@@ -341,7 +341,7 @@ class BillGeneration extends Component {
   }
 
   getItems() {
-    this.setState({ showLoader: true });
+    this.setState({ isLoading: true });
 
  
 
@@ -374,11 +374,25 @@ class BillGeneration extends Component {
             response.data.responseData.length > 0
           ) {
             this.setState({
-              showLoader: false,
+              isLoading: false,
               filteredItems: response.data.responseData,
               items: response.data.responseData,
             });
           }
+          else
+        {
+          this.setState({
+            isLoading: false,
+            items: [],
+          });
+        }
+        }
+        else
+        {
+          this.setState({
+            isLoading: false,
+            items: [],
+          });
         }
       })
       .catch((error) => {

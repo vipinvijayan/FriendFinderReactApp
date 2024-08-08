@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import '../styles/login.css';
 import { connect } from "react-redux";
-
+import { PuffLoader } from "react-spinners";
 import axios from "axios";
 import { confirmAlert } from "react-confirm-alert";
 import Configuration from "../shared/Configuration";
@@ -35,6 +35,11 @@ class Login extends Component {
 
     /* html content */
     render() {
+        const override = `
+        display: block;
+        margin: 0 auto;
+        border-color: blue;
+      `;
         return (
             <div id="loginform">
                 <h2 id="headerTitle">Login</h2>
@@ -49,6 +54,7 @@ class Login extends Component {
                     </div>
 
                     <div id="button" className="row">
+                    <PuffLoader color="#000" loading={this.state.isLoading} css={override} size={80} />
                         <button onClick={this.loginUser} className="login">Login</button>
                         <div className="clearfix10"></div>
                      <button className="register" onClick={this.gotRegister}>Register </button>
@@ -66,7 +72,7 @@ class Login extends Component {
         });
     }
     loginUser = (e) => {
-
+        this.setState({ isLoading: true });
         e.preventDefault();
         axios({
             method: "POST",
@@ -91,7 +97,7 @@ class Login extends Component {
                     
                     localStorage.setItem('userData',JSON.stringify(response.data.responseData));
                   
-
+                    
                     this.props.history.push({
                         pathname: '/friendsfinder/UserList',
                         state: response.data.responseData.id

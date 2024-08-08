@@ -15,9 +15,9 @@ class UserList extends Component {
     super(props);
 
     this.config = new Configuration();
-    this.handleSearchChange = this.handleSearchChange.bind(this);
+    
     this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSortChange = this.handleSortChange.bind(this);
+  
 
     //  var loginKey =props.location.state.loginKey;
 
@@ -303,62 +303,7 @@ class UserList extends Component {
       " Greetings from Cliniqon";
   }
 
-  handleSearchChange(event) {
-    this.setState({ showLoader: true });
-    const target = event.target;
-    const evalue = target.value;
-    var branchType = "";
-
-    if (this.state.selectedTab === "All") {
-      branchType = "";
-    } else {
-      branchType = this.state.selectedTab.toLowerCase();
-    }
-
-    if (evalue.length >= 3) {
-      //items =
-
-      const itemsWithFilter = this.state.allItems.filter((item) => {
-        // 👇️ using AND (&&) operator
-        return (
-          item.Username.toLowerCase().includes(evalue.toLowerCase()) ||
-          item.BranchName.toLowerCase().includes(evalue.toLowerCase()) ||
-          item.Place.toLowerCase().includes(evalue.toLowerCase()) ||
-          item.BranchContact.toLowerCase().includes(evalue.toLowerCase())
-        );
-      });
-
-      this.setState({
-        filteredItems: itemsWithFilter,
-        items: itemsWithFilter,
-        noOfAll: itemsWithFilter.length,
-        noOfCompany: itemsWithFilter.filter(
-          (item) => item.BranchType === "Company"
-        ).length,
-        noOfShops: itemsWithFilter.filter((item) => item.BranchType === "Shop")
-          .length,
-        showLoader: false,
-      });
-    } else {
-      this.setState({ showLoader: false });
-    }
-    if (evalue === "") {
-      const itemsWithFilter = this.state.allItems.filter((item) =>
-        item.BranchType.toLowerCase().includes(branchType)
-      );
-      this.setState({
-        filteredItems: itemsWithFilter,
-        items: itemsWithFilter,
-        noOfAll: itemsWithFilter.length,
-        noOfCompany: itemsWithFilter.filter(
-          (item) => item.BranchType === "Company"
-        ).length,
-        noOfShops: itemsWithFilter.filter((item) => item.BranchType === "Shop")
-          .length,
-        showLoader: false,
-      });
-    }
-  }
+ 
 
   handleInputChange(event) {
     const target = event.target;
@@ -366,54 +311,7 @@ class UserList extends Component {
 
     this.setState({ amountToPay: value });
   }
-  handleSortChange(event) {
-    console.log(this.state.filteredItems);
 
-    this.setState({ showLoader: true });
-    const target = event.target;
-    const value = target.value;
-
-    var branchType = "";
-    if (this.state.selectedTab === "All") {
-      branchType = "";
-    } else {
-      branchType = this.state.selectedTab.toLowerCase();
-    }
-
-    if (value === "new") {
-      this.setState({ sortOrder: "new" });
-      this.setState({
-        items: this.state.filteredItems
-          .filter((item) => item.BranchType.toLowerCase().includes(branchType))
-          .sort((a, b) => {
-            return b.RegisteredOnUnix - a.RegisteredOnUnix;
-          }),
-        showLoader: false,
-      });
-    }
-    if (value === "daily") {
-      this.setState({ sortOrder: "daily" });
-      this.setState({
-        items: this.state.filteredItems
-          .filter((item) => item.BranchType.toLowerCase().includes(branchType))
-          .sort((a, b) => {
-            return b.TodayOrderCount - a.TodayOrderCount;
-          }),
-        showLoader: false,
-      });
-    }
-    if (value === "total") {
-      this.setState({ sortOrder: "total" });
-      this.setState({
-        items: this.state.filteredItems
-          .filter((item) => item.BranchType.toLowerCase().includes(branchType))
-          .sort((a, b) => {
-            return b.OrderCount - a.OrderCount;
-          }),
-        showLoader: false,
-      });
-    }
-  }
 
   onSelect(itemLink) {
     this.clearState();

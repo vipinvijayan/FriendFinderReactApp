@@ -6,6 +6,7 @@ import moment from "moment";
 import axios from "axios";
 import { confirmAlert } from "react-confirm-alert";
 import Configuration from "../shared/Configuration";
+import { PuffLoader } from "react-spinners";
 class Registration extends Component {
     
     constructor(props) {
@@ -50,6 +51,11 @@ class Registration extends Component {
 
     /* html content */
     render() {
+        const override = `
+        display: block;
+        margin: 0 auto;
+        border-color: blue;
+      `;
         return (
             <div id="registerform">
                 <h2 id="headerTitle">Registration Form</h2>
@@ -59,7 +65,7 @@ class Registration extends Component {
                         <input type="text" value={this.state.name} onChange={(e) => this.setState({ name: e.target.value, isError: false })} placeholder="Enter your name" />
                     </div>
                     <div className="row">
-                        <label>Email</label>
+                        <label>Email(Username)</label>
                         <input type="text" value={this.state.email} onChange={(e) => this.setState({ email: e.target.value, isError: false })} placeholder="Enter your email" />
                     </div>
                     <div className="row">
@@ -82,8 +88,14 @@ class Registration extends Component {
                         <input type="text" value={this.state.designation} onChange={(e) => this.setState({ designation: e.target.value, isError: false })} placeholder="Enter your designation" />
                     </div>
                     <div className="row">
-                        <label>Gender</label>
-                        <input type="text" value={this.state.gender} onChange={(e) => this.setState({ gender: e.target.value, isError: false })} placeholder="Enter your gender" />
+                    <label>Gender</label>
+              <select className="sortBranches" name="gender" onChange={this.handleInputChange}>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+                     
+                        
                     </div>
                     <div className="row">
                         <label>Country</label>
@@ -100,6 +112,7 @@ class Registration extends Component {
                   
 
                     <div id="button" className="row">
+                    <PuffLoader color="#000" loading={this.state.isLoading} css={override} size={80} />
                         <button onClick={this.RegistrationUser} className="register">Register</button>
                         
                         <div className="clearfix10"></div>
@@ -118,23 +131,24 @@ class Registration extends Component {
             });
         }
     RegistrationUser = (e) => {
-
+     
+        this.setState({ isLoading: true });
         e.preventDefault();
         axios({
             method: "POST",
             url:  this.config.GLOBAL_URL +'/user/registration',
             data: {
-                "name": this.state.name,
-                "username": this.state.email,
-                "email": this.state.email,
-                "password": this.state.password,
-                "dateOfBirth": moment(this.state.dateOfBirth).unix,
-                "designation": this.state.designation,
-                "profilePicture":'',
-                "gender": this.state.gender,
-                "country": this.state.country,
-                "favoriteColor": this.state.favouriteColor,
-                "favoriteActor": this.state.favouriteActor,
+                name: this.state.name,
+                username: this.state.email,
+                email: this.state.email,
+                password: this.state.password,
+                dateOfBirth: this.state.dateOfBirth,
+                designation: this.state.designation,
+                profilePicture:'',
+                gender: this.state.gender,
+                country: this.state.country,
+                favoriteColor: this.state.favouriteColor,
+                favoriteActor: this.state.favouriteActor,
             }
         }).then(response => {
 
@@ -160,7 +174,7 @@ class Registration extends Component {
                     });
 
                     localStorage.setItem('userData',JSON.stringify(response.data.responseData));
-
+                    this.setState({ showLoader: false });
                     this.props.history.push({
                         pathname: '/friendsfinder/UserList',
                         state: response.data.responseData.id
