@@ -221,10 +221,9 @@ body {
 /*home_section*/
 
 .home_section {
-    background: #64a75a url(./assets/images/bg_home.jpg) no-repeat;
+    
     padding-top: 15%;
     padding-bottom: 5%;
-    /*min-height: 700px;display: flex;justify-content: center;flex-direction: column;*/
 }
 
 .home_section figure p {
@@ -451,12 +450,10 @@ footer ul li a:hover {
     }
 
     .benefitsofMbill_section {
-        background: #cc6e59 url(./assets/images/bg_3.jpg) no-repeat;
         background-position: -154px 622px;
     }
 
     .mbill_section {
-        background: #64a75a url(./assets/images/bg_mbill.jpg) no-repeat;
         background-position: -1165px 0px;
     }
 
@@ -736,7 +733,7 @@ footer ul li a:hover {
 }
 
 .home_section {
-    background: #64a75a url(assets/images/bg_home.jpg) no-repeat;
+    
     padding-top: 15%;
     padding-bottom: 5%;
 }

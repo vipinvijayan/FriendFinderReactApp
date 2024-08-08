@@ -236,7 +236,7 @@ class ProfileDetails extends Component {
     this.setState({ loading: false });
   }
   addasfriend (item)  {
-debugger;
+
 const userData = JSON.parse(localStorage.getItem("userData"));
     axios({
         method: "POST",

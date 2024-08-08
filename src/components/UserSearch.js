@@ -343,8 +343,8 @@ class BillGeneration extends Component {
   getItems() {
     this.setState({ showLoader: true });
 
-   debugger;
-    
+ 
+
     const userData = JSON.parse(localStorage.getItem("userData"));
     axios({
       method: "POST",

@@ -137,7 +137,7 @@ class Registration extends Component {
                 "favoriteActor": this.state.favouriteActor,
             }
         }).then(response => {
-debugger;
+
 
             if (response && response.status === 200 &&
                 response.data && response.data.result === 'Success') {
