@@ -1,0 +1,1226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nokora:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.clearfix
+{
+    width: 100%;
+    height: 1px;
+}
+.clearfix10
+{
+    width: 100%;
+    height: 10px;
+}
+.screenBaseContainer {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.screenShrikCtrlContainer {
+    position: relative;
+    margin: 0 auto 0 auto;
+    max-width: 1024px;
+    min-width: 360px;
+}
+
+.backbtn {
+    width: 5%;
+    float: left;
+    font-size: 1.50rem;
+    color: #fff;
+    padding-top: 4px;
+}
+
+.divider {
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    height: 1px;
+}
+
+.vertical-container {
+    min-height: 400px;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.repeated-item-vertical {
+    min-height: 20px;
+    height: auto;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.scroll-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btm-margin {
+    margin-bottom: 15px;
+}
+
+.tp-margin {
+    margin-top: 15px;
+}
+
+.nav-theme {
+    background-color: #34495e;
+}
+
+.StatusUpdateDiv {
+    background-color: #fff;
+}
+
+.page-container {
+    padding: 0px;
+    height: 100%;
+    min-height: 100%;
+}
+
+.page {
+    margin: 0 auto;
+    padding: 10px 10px;
+    max-width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.page h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.menuBardemoBasicUsage .page p {
+    line-height: 1.6rem;
+}
+
+.CustomerDetails {
+    background-color: #fff;
+}
+
+.ActivityLoader {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.PageSubHeader {
+    background-color: #DEDEDE;
+    width: 100%;
+    padding: 5px 25px;
+    height: 40px;
+    font-size: 15pt;
+}
+
+.ContactData {
+    font-size: 14px;
+    color: #1d1515;
+    line-height: 1.4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.ContactData div.ctnt {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.WorkTackContainer {
+    width: 100%;
+    background-color: #fff;
+}
+
+.TrackDetailsHeader {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.TrackDetailsHeader div.th {
+    font-size: 15px;
+    color: #4272d7;
+    line-height: 1.4;
+    background-color: transparent;
+    border-bottom: 2px solid #f2f2f2;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.TrackDetailsDetails {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.TrackDetailsDetails div.tr {
+    font-size: 13px;
+    color: #808080;
+    line-height: 1.4;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: green;
+    outline: 1px solid transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/*libraries*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*body*/
+
+body {
+    font-family: Myriad Pro;
+}
+
+.head_Caption h2 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.head_Caption p {
+    font-size: 9px;
+}
+
+.head_Caption {
+    margin-bottom: 20px;
+}
+
+
+/*home_section*/
+
+.home_section {
+    background: #64a75a url(./assets/images/bg_home.jpg) no-repeat;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    /*min-height: 700px;display: flex;justify-content: center;flex-direction: column;*/
+}
+
+.home_section figure p {
+    color: white;
+    font-size: 9px;
+    margin-top: 5px;
+}
+
+.home_section form {
+    /* background: rgba(38, 80, 31, 0.47); */
+    /*margin-left: 30px; margin-right: 30px;*/
+    /* padding: 10% 7%; */
+    /*margin-top: 30px; margin-bottom: 30px;*/
+    /* box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.54); */
+    /* border-radius: 10px; */
+}
+
+/* .home_section form div input.form-control {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.76);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    height: 44px;
+} */
+
+/* .home_section form input[placeholder] {
+    color: #bcd53a;
+}
+
+.home_section form button {
+    background: #bcd53b;
+    border-color: #bcd53b;
+    border-radius: 0;
+    padding-top: 12px;
+    font-weight: bold;
+    color: #295b1c;
+} */
+
+/* .home_section form .btn-default:hover {
+    background: #95a92f;
+    border-color: #95a92f;
+} */
+
+.home_section .scrollDown {
+    margin-top: 8%;
+}
+
+
+/*mbill_section*/
+
+.mbill_section {
+    background: #257d76;
+    padding-top: 5%;
+    /*padding-bottom: 10%;*/
+    color: white;
+    /* padding-left: 20px; padding-right: 20px;*/
+    font-size: 15px;
+}
+
+.mbill_section div.col-md-12 p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/*benefitsofMbill_section*/
+
+.benefitsofMbill_section {
+    background: #cc6e59;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    /* padding-left: 20px; padding-right: 20px;*/
+    color: white;
+}
+
+.benefitsofMbill_section .content h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #ec9986;
+}
+
+.benefitsofMbill_section .content h1 span {
+    font-size: 19px;
+    color: #ffca00;
+}
+
+.benefitsofMbill_section .content p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/*contact_section*/
+
+.contact_section {
+    background: #464646;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /*padding-left: 20px; padding-right: 20px;*/
+    float: left;
+    color: white;
+    width: 100%;
+}
+
+.contact_section .address h2,
+.contact_section .address h3,
+.contact_section .address h4 {
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.contact_section form .textField {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    width: 100%;
+    margin-top: 44px;
+    padding: 10px 0px;
+}
+
+.contact_section form button {
+    background: #bcd53b;
+    border: 0;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    color: #285c1e;
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*footer*/
+
+footer {
+    padding: 20px 10px;
+    text-align: center;
+    background: #353535;
+    width: 100%;
+    float: left;
+}
+
+footer ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #b5b5b5;
+    border: 1px solid rgba(181, 181, 181, 0.56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+footer ul li a:hover {
+    color: #b5b5b5;
+    text-decoration: none;
+    background: #464646;
+}
+
+
+/*mediascreen*/
+
+@media(min-width: 768px) {
+    .home_section {
+        background-size: cover;
+    }
+
+    .billDetailsNaviButton {
+        margin-left: 1em;
+        border-radius: 30px;
+        width: 60px;
+        height: 60px;
+        background-color: #64a75a;
+        box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.54);
+    }
+
+    .billDetailsNaviButton .arrow {
+        margin: 22px 22px;
+        color: #fff;
+    }
+
+    .billDetailsNavi {
+        margin: 1em 0.5em;
+    }
+
+    .billDetailsNavi .msg {
+        font-size: 9pt;
+        text-align: center;
+    }
+
+    .dialPanel {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .home_section {
+        background-position: -481px -187px;
+    }
+
+    .home_section form {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .benefitsofMbill_section {
+        background: #cc6e59 url(./assets/images/bg_3.jpg) no-repeat;
+        background-position: -154px 622px;
+    }
+
+    .mbill_section {
+        background: #64a75a url(./assets/images/bg_mbill.jpg) no-repeat;
+        background-position: -1165px 0px;
+    }
+
+    .mbill_section figure {
+        margin-top: 14%;
+    }
+
+    .billDetailsNaviButton {
+        border-radius: 25px;
+        width: 50px;
+        height: 50px;
+        background-color: #64a75a;
+        box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.54);
+    }
+
+    .billDetailsNaviButton .arrow {
+        margin: 18px 18px;
+        color: #fff;
+    }
+
+    .billDetailsNavi {
+        margin: 1em 0.25em;
+    }
+
+    .billDetailsNavi .msg {
+        font-size: 9pt;
+        text-align: center;
+    }
+
+    .dialPanel {
+        position: relative;
+        background-color: #005953 !important;
+        margin: -5px 0 0 0;
+        padding-top: 1.2em;
+        height: 60px;
+        border-radius: 0 0 10px 10px;
+        color: #fff;
+        font-size: 12pt;
+        font-weight: 500;
+        z-index: 1;
+    }
+
+    .dialButtonContainer {
+        margin: 0;
+    }
+
+    .callButton {
+        border-left: 2px solid #cbcbcbc2;
+    }
+
+    .dialButtonWhatsappIcon {
+        padding-left: -5px;
+        margin-left: -0.6em;
+    }
+
+    .dialButtonWhatsapp {
+        font-size: 14pt;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .dialButtonCallIcon {
+        padding-left: 1.5em;
+    }
+
+    .dialButtonCall {
+        font-size: 14pt;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        text-align: left;
+    }
+}
+
+
+/*Customised Styles*/
+.shopDetailsIcon {
+    padding: 0.70em;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.shopDetailsContiner {
+    margin-bottom: 1em;
+
+}
+
+.shopDetails {
+    text-align: left;
+    padding: 0.25em;
+}
+
+.shopDetailsName {
+    font-size: 16pt;
+    font-weight: 600;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.shopDetailsAddress {
+    font-size: 11pt;
+    font-weight: 400;
+    word-wrap: break-word;
+    max-height: 40px;
+    overflow: hidden;
+    margin-top: -5px;
+}
+
+.shopDetailsPhone {
+    font-size: 12pt;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.loginformDivivder {
+    height: 1px;
+    background-color: #cdcdcd;
+}
+
+.loginFormLoading {
+    margin-bottom: 0.5em;
+    font-size: 14pt;
+    font-weight: 600;
+    color: #898a8e;
+}
+
+.nonPasscodePanel {
+    margin: 1.5em 0 1.8em 0;
+}
+
+.nonPasscodePanel .heading {
+    text-align: center;
+    color: #939393;
+    margin-bottom: 1.75em;
+}
+
+.nonPasscodePanel .heading p {
+    text-align: center;
+    color: #939393;
+    /* margin-bottom: 1.75em; */
+    font-size: 10pt;
+}
+
+.nonPasscodePanel input {
+    background: #e8f0e8;
+    border: 2px solid #e8f0e8c2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    height: 44px;
+    margin: 0 0 1.5em 0;
+}
+
+.nonPasscodePanel input[placeholder] {
+    color: #525252;
+    font-size: 12pt;
+}
+
+.nonPasscodePanel .viewBtn {
+    background-color: #4b9c3f;
+    border: 2px solid #4b9c3f22;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.54);
+    color: #fff;
+    font-weight: 600;
+}
+
+.nonPasscodePanel .viewBtnClicked {
+    background-color: #939393;
+    border: 2px solid #939393;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.54);
+    color: #fff;
+    font-weight: 600;
+}
+
+.nonPasscodePanel .viewBtn .activityIndicator {
+    margin-left: 1em;
+}
+
+.verificationPanel {
+    margin: 1.5em 0 1em 0;
+}
+
+.verificationPanel .heading {
+    text-align: center;
+    color: #939393;
+    margin-bottom: 1.75em;
+}
+
+.verificationPanel .heading p {
+    text-align: center;
+    color: #939393;
+    /* margin-bottom: 1.75em; */
+    font-size: 10pt;
+}
+
+.verificationPanel input {
+    background: #e8f0e8;
+    border: 2px solid #e8f0e8c2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    height: 44px;
+    margin: 0 0 1.5em 0;
+}
+
+.verificationPanel input[placeholder] {
+    color: #525252;
+    font-size: 12pt;
+}
+
+.verificationPanel .viewBtn {
+    background-color: #4b9c3f;
+    border: 2px solid #4b9c3f22;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.54);
+    color: #fff;
+    font-weight: 600;
+}
+
+.verificationPanel .viewBtnClicked {
+    background-color: #939393;
+    border: 2px solid #939393;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.54);
+    color: #fff;
+    font-weight: 600;
+}
+
+.verificationPanel .viewBtn .activityIndicator {
+    margin-left: 1em;
+}
+
+.verificationPanel .cancelBtn {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #acacac22;
+    box-shadow: 0px 2px 2px rgba(91, 91, 91, 0.54);
+    color: #9d9d9d;
+    font-weight: 400;
+}
+
+.bgcolor {
+    background-color: lightblue;
+
+}
+
+.loginFormCrtl {
+    /* position: absolute; */
+}
+
+.loginForm {
+    position: relative;
+    background-color: #fff;
+    color: #353535;
+    padding: 10% 7% 5% 7%;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.54);
+    border-radius: 10px;
+    z-index: 100;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.loginFormWithPasscode {
+    padding: 5% 7% 5% 7%;
+}
+
+.loginForm p {
+    font-size: 16px;
+}
+
+.whiteColour {
+    color: white;
+}
+
+.bcd53aColour {
+    color: #bcd53a;
+}
+
+.home_section {
+    background: #64a75a url(assets/images/bg_home.jpg) no-repeat;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+.home_section figure p {
+    color: white;
+    font-size: 9px;
+    margin-top: 5px;
+}
+
+.home_section form {
+    /* background: rgba(38, 80, 31, 0.47); */
+    /* padding: 10% 7%; */
+    /* box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.54); */
+    /* border-radius: 10px; */
+}
+
+.home_section form div input.form-control {
+    /* background: transparent; */
+    /* border: 2px solid rgba(255, 255, 255, 0.76); */
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    height: 44px; */
+}
+
+/* .home_section form input[placeholder] {
+    color: #bcd53a;
+} */
+
+/* .home_section form button {
+    background: #bcd53b;
+    border-color: #bcd53b;
+    border-radius: 0;
+    padding-top: 12px;
+    font-weight: bold;
+    color: #295b1c;
+} */
+
+/* .home_section form .btn-default:hover {
+    background: #95a92f;
+    border-color: #95a92f;
+} */
+
+.home_section .scrollDown {
+    margin-top: 8%;
+}
+
+.txtcntr {
+    text-align: center;
+}
+
+.txtlft {
+    text-align: left;
+}
+
+.txtrght {
+    text-align: right;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.pAlign {
+    text-align: justify;
+    word-spacing: -2px;
+}
+
+.benefitsofMbill_section {
+    background: #cc6e59;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    color: white;
+}
+
+.benefitsofMbill_section .content h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #ec9986;
+}
+
+.benefitsofMbill_section .content h1 span {
+    font-size: 19px;
+    color: #ffca00;
+}
+
+.benefitsofMbill_section .content p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.head_Caption {
+    margin-bottom: 20px;
+}
+
+.head_Caption h2 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.head_Caption p {
+    font-size: 9px;
+}
+
+.contact_section {
+    background: #464646;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    float: left;
+    color: white;
+    width: 100%;
+}
+
+.contact_section .address h2,
+.contact_section .address h3,
+.contact_section .address h4 {
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.contact_section form .textField {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    width: 100%;
+    margin-top: 44px;
+    padding: 10px 0px;
+}
+
+.contact_section form button {
+    background: #bcd53b;
+    border: 0;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    color: #285c1e;
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contact_section .submitquery {
+    background: #353535;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin-top: 10px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.54);
+}
+
+.shopDetailsMsg {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 2px 5px 2px;
+}
+
+.loadingShopDetailsMsg {
+    color: #fff268 !important;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 2px 5px 2px;
+}
+
+.errorMsgLanding {
+    color: #ffffff !important;
+    background-color: #CD1818 !important;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 5px;
+    margin: 15px 2px 2px 2px;
+    border-radius: 5px;
+}
+
+.fontCustom {
+    font-family: 'Nokora', sans-serif;
+}
+
+.font10 {
+    font-size: 10pt;
+}
+
+.font12 {
+    font-size: 12pt;
+}
+
+.font14 {
+    font-size: 14pt;
+}
+
+.font16 {
+    font-size: 16pt;
+}
+
+.font18 {
+    font-size: 18pt;
+}
+
+.font20 {
+    font-size: 20pt;
+}
+
+.font22 {
+    font-size: 22pt;
+}
+
+.font24 {
+    font-size: 24pt;
+}
+.fontWeightbold {
+    font-weight: bold;
+}
+.fontWeight500 {
+    font-weight: 500;
+}
+
+.fontWeight600 {
+    font-weight: 600;
+}
+
+.textAlignLeft {
+    text-align: left;
+}
+
+.textAlignRight {
+    text-align: right;
+}
+
+.marginLeft1 {
+    margin-left: 1px;
+}
+
+.billContent {
+    height: 90vh;
+    background-color: #F3F1F5;
+}
+
+.billContainer {
+    margin: 3%;
+    padding-top: 2%;
+    height: 95%;
+    background-color: #fff;
+}
+
+.billAddressHeader {
+    min-height: 20%;
+ 
+}
+.billAddressHeader img{
+    width: 50%;
+    margin-left: 20%;
+    height: 100%;
+    padding: 5%;
+}
+.billHeader {
+    min-height: 10%;
+    border-top: 1px solid #636363;
+    border-bottom: 1px solid #636363;
+}
+
+.billCustomerDetails {
+    height: 10%;
+    border-bottom: 1px solid #636363;
+}
+
+.billJobDetails {
+    height: 25%;
+}
+
+.billJobStatus {
+    height: 5%;
+    border-bottom: 1px solid #636363;
+}
+
+.billJobWarranty {
+    height: 15%;
+    border-bottom: 1px solid #636363;
+}
+
+.billJobEstimations {
+    height: 25%;
+}
+
+.billFooter {
+    height: 5%;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.billBranchName {
+    min-height: 20px;
+}
+
+.billBranchAddress {
+    max-height: 40px;
+    min-height: 40px;
+    word-wrap: break-word;
+    overflow-y: hidden;
+}
+
+.billbutton {
+    border: 0;
+    border-radius: 10px;
+    height: 30px;
+    padding-top: 5px !important;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 2px !important;
+}
+
+.billbuttonWhatsapp {
+    background: #81D37A;
+    width: 110px;
+    color: #fff;
+}
+
+.billbuttonWhatsappIcon {
+    margin: 2px -3px 2px 3px;
+}
+
+.billbuttonCall {
+    background: #5184E9;
+    width: 60px;
+    color: #fff;
+}
+
+.billbuttonCallIcon {
+    margin: 2px -3px 2px 3px;
+}
+
+.billContacts {
+    color: blue;
+    margin-right: 0px !important;
+}
+
+.colorwhite {
+    color: #fff;
+}
+
+.colorblack {
+    color: #000;
+}
+
+.menuButton {
+    height: 100%;
+}
+
+.hamburgerMenuIcon {
+    margin-top: 25px;
+}
+
+.menuHeader {
+    margin-top: 15px;
+}
+
+.menuSubHeader {
+    margin-top: -10px;
+}
+
+.billJobStatusItem {
+    border-radius: 5px;
+    background-color: #4272d7;
+    color: #fff;
+    margin: 2px 4px;
+    width: 90px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.bmmenuHeader {
+    min-height: 10em;
+    padding: 1.2em;
+    padding-top: 2em;
+    color: #4272d7;
+}
+
+.bmmenuItem {
+    min-height: 70px;
+    border-bottom: 1px solid #d7d7d7;
+    padding-top: 1.8em;
+    font-weight: 600;
+}
+
+.bmmenuItemRow {
+    color: #5e5e5e;
+}
+
+.bmmenuItemNoBorder {
+    min-height: 70px;
+    padding-top: 1.8em;
+    font-weight: 600;
+}
+
+
+/* Position and sizing of burger button */
+
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 15px;
+    top: 30px;
+}
+
+
+/* Color/shape of burger icon bars */
+
+.bm-burger-bars {
+    background: #ffffff;
+}
+
+
+/* Color/shape of burger icon bars on hover*/
+
+.bm-burger-bars-hover {
+    background: #a90000;
+}
+
+
+/* Position and sizing of clickable cross button */
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+
+/* Color/shape of close button cross */
+
+.bm-cross {
+    background: #bdc3c7;
+}
+
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+
+/* General sidebar styles */
+
+.bm-menu {
+    background: #ffffff;
+    font-size: 1.15em;
+}
+
+
+/* Morph shape necessary with bubble or elastic */
+
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+
+/* Wrapper for item list */
+
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+
+/* Individual item */
+
+.bm-item {
+    display: inline-block;
+}
+
+
+/* Styling of overlay */
+
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
