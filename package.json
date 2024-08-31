@@ -2,7 +2,7 @@
   "name": "reactproject",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Cliniqon.in/friendsfinder/",
+  "homepage": "https://appthoughts.in/gm",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",

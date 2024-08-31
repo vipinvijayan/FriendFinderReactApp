@@ -9,7 +9,7 @@ class CommonJsMethods {
     GotoMenuPage = (loginKey, menuItem) => {
         alert(menuItem);
         alert(loginKey);
-        var menuitems = "/friendsfinder/" + menuItem;
+        var menuitems = "/" + menuItem;
         this.props.history.push({
             pathname: menuitems,
             state: loginKey
@@ -18,19 +18,19 @@ class CommonJsMethods {
 
     // GotoUserSearch = (loginKey) => {
     //     this.props.history.push({
-    //         pathname: '/friendsfinder/UserSearch',
+    //         pathname: '/UserSearch',
     //         state: loginKey
     //     });
     // }
     // GotoProfileMatch(loginKey) {
     //     this.props.history.push({
-    //         pathname: '/friendsfinder/ProfileMatch',
+    //         pathname: '/ProfileMatch',
     //         state: loginKey
     //     });
     // }
     GotoLogout = () => {
         this.props.history.push({
-            pathname: '/friendsfinder/Login',
+            pathname: '/Login',
             state: ""
         });
     }

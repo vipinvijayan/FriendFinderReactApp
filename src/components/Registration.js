@@ -126,7 +126,7 @@ class Registration extends Component {
     gotLogin=(e)=>
         {
             this.props.history.push({
-                pathname: '/friendsfinder/login',
+                pathname: '/login',
                
             });
         }
@@ -176,7 +176,7 @@ class Registration extends Component {
                     localStorage.setItem('userData',JSON.stringify(response.data.responseData));
                     this.setState({ showLoader: false });
                     this.props.history.push({
-                        pathname: '/friendsfinder/UserList',
+                        pathname: '/UserList',
                         state: response.data.responseData.id
                     });
                 }

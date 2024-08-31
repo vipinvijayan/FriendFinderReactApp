@@ -19,18 +19,18 @@ class App extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route path="/friendsfinder/" exact component={Login} />
-                    <Route path="/friendsfinder/Login" exact component={Login} />
-                    <Route path="/friendsfinder/Register" exact component={Registration} />
-                    <Route path="/friendsfinder/UserList" exact render={(props) => (
+                    <Route path="/gm" exact component={Login} />
+                    <Route path="/gm/Login" exact component={Login} />
+                    <Route path="/Register" exact component={Registration} />
+                    <Route path="/UserList" exact render={(props) => (
                         <UserList {...this.props} />)} />
-                    <Route path="/friendsfinder/UserSearch" exact render={(props) => (
+                    <Route path="/UserSearch" exact render={(props) => (
                         <UserSearch {...this.props} />)} />
-                    <Route path="/friendsfinder/ProfileDetails" exact render={(props) => (
+                    <Route path="/ProfileDetails" exact render={(props) => (
                         <ProfileDetails {...this.props} />)} />
-                    <Route path="/friendsfinder/FriendsList" exact render={(props) => (
+                    <Route path="/FriendsList" exact render={(props) => (
                         <FriendsList {...this.props} />)} />
-                    <Route path="/friendsfinder/ProfileMatch" exact render={(props) => (
+                    <Route path="/ProfileMatch" exact render={(props) => (
                         <ProfileMatch {...this.props} />)} />
                     {/* <Route path="/about" exact component={About} />
                     <Route path="/faq" exact component={FAQ} /> */}

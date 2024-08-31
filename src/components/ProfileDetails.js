@@ -279,33 +279,33 @@ const userData = JSON.parse(localStorage.getItem("userData"));
 
   GotoUserList() {
     this.props.history.push({
-      pathname: "/friendsfinder/UserList",
+      pathname: "/UserList",
       
     });
   }
 
   GotoSearchPage() {
     this.props.history.push({
-      pathname: "/friendsfinder/UserSearch",
+      pathname: "/UserSearch",
       
     });
   }
   GotoProfileMatches() {
     this.props.history.push({
-      pathname: "/friendsfinder/ProfileMatch",
+      pathname: "/ProfileMatch",
       
     });
   }
   GotoFriendsList() {
     this.props.history.push({
-      pathname: "/friendsfinder/FriendsList",
+      pathname: "/FriendsList",
       
     });
   }
   GotoLogout() {
     localStorage.removeItem("userData");
     this.props.history.push({
-      pathname: "/friendsfinder/Login",
+      pathname: "/Login",
       state: "",
     });
   }

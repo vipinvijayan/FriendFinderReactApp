@@ -217,7 +217,9 @@ body {
     margin-bottom: 20px;
 }
 
-
+.centerContent{
+    text-align: center;
+}
 /*home_section*/
 
 .home_section {
